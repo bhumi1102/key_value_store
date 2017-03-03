@@ -1,6 +1,6 @@
 # KVStore
 
-**TODO: Add description**
+**TODO: Disributed key-value store**
 
 ## Installation
 
