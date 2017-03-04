@@ -7,5 +7,8 @@ defmodule KVStore.BucketTest do
 
     KVStore.Bucket.put(bucket, "milk", 3)
     assert KVStore.Bucket.get(bucket, "milk") == 3
+
+    KVStore.Bucket.delete(bucket, "milk")
+    assert KVStore.Bucket.get(bucket, "milk") == nil
   end
 end
