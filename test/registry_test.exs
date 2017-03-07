@@ -1,8 +1,8 @@
 defmodule KVStore.RegistryTest do
   use ExUnit.Case, async: true
 
-  setup do
-    {:ok, registry} = KVStore.Registry.start_link
+  setup context do
+    {:ok, registry} = KVStore.Registry.start_link(context.test)
     {:ok, registry: registry}
   end
 

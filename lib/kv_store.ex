@@ -1,18 +1,9 @@
 defmodule KVStore do
-  @moduledoc """
-  Documentation for KVStore.
-  """
+  use Application
 
-  @doc """
-  Hello world.
-
-  ## Examples
-
-      iex> KVStore.hello
-      :world
-
-  """
-  def hello do
-    :world
+  def start(_type, _args) do
+    KVStore.Supervisor.start_link
   end
 end
+
+
